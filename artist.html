@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Artists - Art Gallery</title>
 </head>
 <body>
@@ -11,60 +13,14 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artist.html">Artists</a></li>
-            <li><a href="art.html">Art Fairs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <form action="#" method="get">
-                <input type="text" name="search" placeholder="Search...">
-                <button type="submit">Search</button>
-            </form>
-        </ul>
-    </nav>
-
-    <main>
-        <section >
-            <h2>Featured Artists</h2>
-            <div >
-                <h3>Lokesh</h3>
-                <p>Specialty: 3D Modelling</p>
-                <p><a href="lokeshdev.co">Website</a></p>
-            </div>
-            <div >
-                <h3>My Name</h3>
-                <p>Specialty: Drawing</p>
-                <p>Cultures</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <h3>Contact Information</h3>
-            <p>123 Art Street, Artville</p>
-            <p>Email: info@artgallery.com</p>
-            <p>Phone: +123 456 7890</p>
+        <div class="search-icon">
+            <a href="#search-card">
+                <i class="fas fa-search"></i>
+                <h1>Search..</h1>
+            </a>
         </div>
-        <div>
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Subscribe to our Newsletter</h3>
-            <form action="#" method="post">
-                <input type="email" name="email" placeholder="Your email...">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-        <div>
-            <h3>Site Map</h3>
+        
+        <div class="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="artist.html">Artists</a></li>
@@ -74,6 +30,79 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </footer>
+        
+        <div class="login">
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="artists-section">
+            <h2>Featured Artists</h2>
+            <div class="artist">
+                <h3>Lokesh</h3>
+                <p>Specialty: 3D Modelling</p>
+                <p><a href="lokeshdev.co">Website</a></p>
+            </div>
+            <div class="artist">
+                <h3>My Name</h3>
+                <p>Specialty: Drawing</p>
+                <p>Cultures</p>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Something</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            5534 Somewhere In. The World 22193-10212<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+         
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Navigation</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artist.html">Artists</a></li>
+                <li><a href="art.html">Art Fairs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Follow Us</h2>
+            
+            <ul class="nav__ul">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+        
+      </footer>
+
+
+
+    <div id="search-card" class="search-card">
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
 </body>
 </html>
